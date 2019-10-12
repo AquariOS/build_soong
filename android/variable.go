@@ -20,7 +20,7 @@ import (
 	"runtime"
 	"strings"
 
-	"gzosp/soong/android"
+	"aquarios/soong/android"
 
 	"github.com/google/blueprint/proptools"
 )
@@ -127,8 +127,8 @@ type variableProperties struct {
 			Srcs         []string
 		}
 
-		// include Gzosp variables
-		Gzosp android.Product_variables
+		// include Aquarios variables
+		Aquarios android.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -293,8 +293,8 @@ type productVariables struct {
 
 	TargetFSConfigGen []string `json:",omitempty"`
 
-	// include Gzosp variables
-	Gzosp android.ProductVariables
+	// include Aquarios variables
+	Aquarios android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
