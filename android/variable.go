@@ -128,7 +128,7 @@ type variableProperties struct {
 		}
 
 		// include Aquarios variables
-		Aquarios android.Product_variables
+		aquarios android.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -294,7 +294,7 @@ type productVariables struct {
 	TargetFSConfigGen []string `json:",omitempty"`
 
 	// include Aquarios variables
-	Aquarios android.ProductVariables
+	aquarios android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
